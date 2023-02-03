@@ -1,0 +1,231 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background-image: url("fondos/color-body.jpg");
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; }
+
+/*SCROOLLBAR*/
+::-webkit-scrollbar {
+  width: 12px; }
+
+::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #59415e; }
+
+/*FIN SCROLLBAR*/
+/*MENU BARRA*/
+/*         
+#menuBarra{
+    background-color: rgb(245,245,245);
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 6px 4px rgba(138, 43, 226, 0.25);
+}
+.menuBarra h2{
+    color: blueviolet;
+    font-size: 2.8em;
+    font-family: "Dancing Script", cursiva;
+
+}
+
+.menuBarra a{
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    padding-inline: 14px;
+}
+
+.menuBarra a:hover{
+    color:rgb(94, 33, 151);
+}*/
+/*FIN MENU BARRA*/
+/*INICIO DE SECTION,BUTTON,TITLE*/
+/*
+.sectionBtnTitle{
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ) , url("imagenes/fondos-/fondo.jpg");
+    padding: 3.4%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 300px;
+}
+.sectionBtnTitle h1{
+    font-size: 4.1em;
+    color: white;
+}
+.sectionBtnTitle .btn{
+    border: solid blueviolet;
+    background-color: blueviolet;
+    border-width: 10px;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 75%);
+    text-decoration: none; 
+    transition: 0.5s;
+}
+.sectionBtnTitle .btn:hover{
+    border: solid rgb(94, 33, 151);
+    background-color: rgb(94, 33, 151);
+    border-width: 12px;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 22px;
+    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 75%);
+    text-decoration: none; 
+}
+        /*FIN DE SECTION,BUTTON,TITLE*/
+/*INICIO SECTION Y VIDEO*/
+/*
+.sectionDosH2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linea{
+    display: inline-block;
+    position: relative;
+    color: black;  
+    font-family: "Dancing Script", cursiva;
+}
+.linea::after, .linea::before{
+    content:"";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background-color: black;
+    top: 0.6em;
+}
+.linea::before{
+    left: -140px;
+}
+.linea::after{
+    right: -140px;
+}
+
+.sectionDos{
+    display: flex;
+    align-items: center;
+    
+}   
+.sectionDosVideo{
+    width: 17%;
+    border-radius:25px ;
+    margin-left: 100px ;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 75%);
+}
+.sectionDos p{
+    font-size: 1.8em;
+    text-align: center;
+    word-spacing: 0.2em;
+    background-color: rgb(245,245,245);
+    margin: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 20%);
+}
+
+        /*FIN SECTION Y VIDEO*/
+/*INCIO LOGOS CON LINKS*/
+/*
+.sectionTres{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ) ;
+    font-size: 1.5em;
+    color: white; 
+}
+           /* INICIO BTN*/
+/*.sectionTresBtnBox{
+    display: flex;
+    justify-content: center;
+    
+}
+.sectionTresBtn{
+    border: solid blueviolet;
+    background-color: blueviolet;
+    border-width: 10px;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 75%);
+    text-decoration: none; 
+    margin: 1%;
+    transition: 0.5s;
+}
+
+.sectionTresBtn:hover{
+    border: solid rgb(94, 33, 151);
+    background-color: rgb(94, 33, 151);
+    border-width: 12px;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 22px;
+    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 75%);
+    text-decoration: none; 
+}
+                /* FIN BTN*/
+/*
+.sectionTresLinks{
+    display: flex;
+    justify-content: center;
+    margin: 1%;   
+}
+                /*FIN LOGOS CON LINKS*/
+/*INICIO FOOTER*/
+/*footerFinPagina{
+    text-align: center;
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ) ;
+    color: rgb(63, 63, 63);
+}
+            /*FIN FOOTER*/
+/*INICIO @MEDIA*/
+/*
+@media (max-width: 768px) {
+    .sectionDos {
+        display: block;
+}
+.sectionDosVideo{
+   display: none;
+}
+
+.menuBarra{
+    padding-right: 0px;
+}
+.menuBarra h2{
+    font-size: 2.4em;
+}
+.menuBarra a{
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    padding-inline: 8px;
+}
+}
+@media (max-width: 576px){
+    .menuBarra{
+        flex-direction: column;
+    }
+    .menuBarra img{
+        display: none;
+    }
+    .sectionDosH2{
+        font-size: 1.2em;
+    }
+    .linea::after, .linea::before{
+        display: none;
+    }
+    .sectionDos p{
+        font-size:1.4em ;
+}
+.linea{
+    font-size: 1.5em;
+}
+}
+            /*FIN @MEDIA*/
