@@ -1,7 +1,12 @@
+@import "servicios";
+@import "nosotros";
+@import "fotos";
+
+
 //VARIABLES DEL MENU Y BOTONES
 $colorPrincipal: blueviolet;
-$colorHover: rgb(94, 33, 151);
-$sizePrincipal: 2.8em;
+$colorHover:  rgb(216, 64, 208);
+$sizePrincipal: 2.5em;
 $familyTitle:"Dancing Script", cursiva;
 //VARIABLES DEL BODY 
 $familyGeneral: 'Roboto', sans-serif;
@@ -10,12 +15,31 @@ $weigth: bold;
 body{
     margin: 0%;
     padding: 0%;
-    background-image: url("fondos/color-body.jpg");
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    
+    background-image: url(../assets/imagenes/fondos/color-body.jpg);
+    font-family: $familyGeneral;
+    font-weight: $weigth;
 }
+//BOTONES GENERALES
+.button{
+    border: solid $colorPrincipal;
+    background-color:$colorPrincipal;
+    border-width: 10px;
+    color: white;
+    font-size: 1.4em;
+    border-radius: 17px;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    text-decoration: none;
+    transition: 0.5s;
+    &:hover{
+        border: solid $colorHover;
+        background-color: $colorHover;
+        border-width: 12px;
+        font-size: 1.5em;
+        border-radius: 17px;
+    }
+}
+
 /*SCROOLLBAR*/
 ::-webkit-scrollbar{
     width: 12px;
@@ -28,82 +52,62 @@ body{
     background: #59415e;
 }
 /*FIN SCROLLBAR*/
-
 /*MENU BARRA*/ 
-   /*         
-#menuBarra{
-    background-color: rgb(245,245,245);
-    align-items: center;
-    justify-content: space-evenly;
+.navbar{
+    z-index: 1;
+    padding-top: 0px !important;
+    justify-content: center;
+    position: relative;
     box-shadow: 0px 0px 6px 4px rgba(138, 43, 226, 0.25);
-}
-.menuBarra h2{
-    color: blueviolet;
-    font-size: 2.8em;
-    font-family: "Dancing Script", cursiva;
-
-}
-
-.menuBarra a{
+    #menuBarra{
+    background-color: rgb(245,245,245);
+    h1{
+    color:$colorPrincipal;
+    font-size:$sizePrincipal;
+    font-family:$familyTitle;
+    &:hover{
+        color: rgb(216, 64, 208)
+    }
+    }
+    a{
     color: black;
-    text-decoration: none;
     font-size: 19px;
-    padding-inline: 14px;
+    }   
+    a:hover{
+    color:$colorHover;
+    }
+    #menuBarraServicios{
+    padding-left: 200px;
+    margin-right: 200px !important;
+    }
 }
-
-.menuBarra a:hover{
-    color:rgb(94, 33, 151);
-}*/
-            /*FIN MENU BARRA*/ 
-    /*INICIO DE SECTION,BUTTON,TITLE*/
-    /*
-.sectionBtnTitle{
-    background-image: linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ) , url("imagenes/fondos-/fondo.jpg");
-    padding: 3.4%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    height: 300px;
 }
-.sectionBtnTitle h1{
+/*FIN MENU BARRA*/ 
+/*INICIO DE SECTION,CAROUSEL,BUTTON Y TITLE*/
+.carousel-caption{
+    right: 0% !important;
+    left: 0% !important;
+    padding-top: 0% !important;
+    top: 8rem;
+    h1{
     font-size: 4.1em;
     color: white;
-}
-.sectionBtnTitle .btn{
-    border: solid blueviolet;
-    background-color: blueviolet;
-    border-width: 10px;
-    color: white;
-    font-size: 1.3em;
-    border-radius: 20px;
-    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 75%);
-    text-decoration: none; 
-    transition: 0.5s;
-}
-.sectionBtnTitle .btn:hover{
-    border: solid rgb(94, 33, 151);
-    background-color: rgb(94, 33, 151);
-    border-width: 12px;
-    color: white;
-    font-size: 1.5em;
-    border-radius: 22px;
-    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 75%);
-    text-decoration: none; 
-}
-        /*FIN DE SECTION,BUTTON,TITLE*/
+    }
 
-        /*INICIO SECTION Y VIDEO*/
-/*
+}
+
+/*FIN DE SECTION,TITLE*/
+/*INICIO SECTION Y VIDEO*/
 .sectionDosH2{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.linea{
+    h2{    
     display: inline-block;
     position: relative;
     color: black;  
-    font-family: "Dancing Script", cursiva;
+    font-family:$familyTitle;
+}
 }
 .linea::after, .linea::before{
     content:"";
@@ -119,33 +123,31 @@ body{
 .linea::after{
     right: -140px;
 }
-
 .sectionDos{
     display: flex;
     align-items: center;
-    
-}   
-.sectionDosVideo{
+    video{
     width: 17%;
     border-radius:25px ;
     margin-left: 100px ;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 75%);
-}
-.sectionDos p{
-    font-size: 1.8em;
-    text-align: center;
-    word-spacing: 0.2em;
-    background-color: rgb(245,245,245);
-    margin: 50px;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 20%);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    }
+    P{
+        height: 35%;
+        font-size: 1.8em;
+        text-align: center;
+        word-spacing: 0.2em;
+        background-color: rgb(245,245,245);
+        border-radius: 20px;
+        box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+        margin: 50px;
+        padding: 10px;
+      }
 }
 
-        /*FIN SECTION Y VIDEO*/
-        /*INCIO LOGOS CON LINKS*/
-        /*
+/*FIN SECTION Y VIDEO*/
+/*INCIO LOGOS CON LINKS*/
 .sectionTres{
     display: flex;
     justify-content: center;
@@ -153,81 +155,35 @@ body{
     font-size: 1.5em;
     color: white; 
 }
-           /* INICIO BTN*/
-/*.sectionTresBtnBox{
+.sectionTresButtonBox{
     display: flex;
     justify-content: center;
-    
 }
-.sectionTresBtn{
-    border: solid blueviolet;
-    background-color: blueviolet;
-    border-width: 10px;
-    color: white;
-    font-size: 1.3em;
-    border-radius: 20px;
-    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 75%);
-    text-decoration: none; 
-    margin: 1%;
-    transition: 0.5s;
-}
-
-.sectionTresBtn:hover{
-    border: solid rgb(94, 33, 151);
-    background-color: rgb(94, 33, 151);
-    border-width: 12px;
-    color: white;
-    font-size: 1.5em;
-    border-radius: 22px;
-    box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 75%);
-    text-decoration: none; 
-}
-                /* FIN BTN*/
-/*
 .sectionTresLinks{
     display: flex;
     justify-content: center;
     margin: 1%;   
 }
-                /*FIN LOGOS CON LINKS*/
-                /*INICIO FOOTER*/
-/*footerFinPagina{
+/*FIN LOGOS CON LINKS*/
+/*INICIO FOOTER*/
+.footerFinPagina{
     text-align: center;
     background-image: linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ) ;
     color: rgb(63, 63, 63);
 }
-            /*FIN FOOTER*/
+/*FIN FOOTER*/
+/*INICIO @MEDIA*/
 
-            /*INICIO @MEDIA*/
-
-/*
-@media (max-width: 768px) {
-    .sectionDos {
-        display: block;
-}
-.sectionDosVideo{
-   display: none;
-}
-
-.menuBarra{
-    padding-right: 0px;
-}
-.menuBarra h2{
-    font-size: 2.4em;
-}
-.menuBarra a{
-    color: black;
-    text-decoration: none;
-    font-size: 19px;
-    padding-inline: 8px;
-}
-}
 @media (max-width: 576px){
-    .menuBarra{
+    #menuBarra{
         flex-direction: column;
-    }
-    .menuBarra img{
+        img{
         display: none;
+        }
+        p{
+            font-size:1.4em ;
+            justify-content: center;
+    }
     }
     .sectionDosH2{
         font-size: 1.2em;
@@ -235,11 +191,58 @@ body{
     .linea::after, .linea::before{
         display: none;
     }
-    .sectionDos p{
-        font-size:1.4em ;
-}
-.linea{
+    .linea{
     font-size: 1.5em;
 }
+.button{
+    border-width: 8px;
+    font-size: 1.1em;
+    border-radius: 15px;
+    border-width: 10px;
+    &:hover{
+        border-width: 10px;
+        font-size: 1.3em;
+        border-radius: 18px;
+    }
 }
-            /*FIN @MEDIA*/
+.carousel-caption{
+    top:1rem !important;
+    h1{
+        font-size: 2.5em;
+    }
+  }
+}
+@media (max-width: 768px) {
+    .sectionDos {
+        display: block;
+        Video{
+            display: none;
+         }
+}
+#menuBarra{
+    display: flex;
+    padding-right: 0px;
+    h2{ 
+    justify-content: center;
+    font-size: 1.8em}
+    img{
+        display: none;
+        }
+    a{
+    font-size: 19px;
+    padding-inline: 0px;
+    justify-content: center;
+    }
+}
+.carousel-caption{
+    top:3rem;
+  }
+}
+@media (max-width:1200px){
+    #menuBarra{
+        img{
+        display: none;
+        }
+}
+}
+ /*FIN @MEDIA*/

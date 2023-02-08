@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- FUENTE DE LETRAS -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- LINK DE SCSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>	
+        <!-- Animaciones -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Nosotros</title>
+</head>
+<body>
+     <!-- MENU BARRA -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+    <div class="container-fluid" id="menuBarra">
+        <a class="navbar-brand" href="index.html"><h1 class="animate__animated animate__fadeInDown">¡Luisitas Nails!</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuBarraServicios">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="fotos.html">Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+              </li>
+            </ul>
+            <img class="imgLogo" src="assets/imagenes/logos/Logo-luisitas.png" width="8%" alt="">
+        </div>
+    </div>
+</nav>
+<br><br>
+    <!-- FIN MENU BARRA -->
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 ">
+            <div class=" d-flex justify-content-evenly">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalCertificado1">
+                    <img class="certificados" src="assets/imagenes/certificados/certificado-1.jpeg"  height="auto" alt="Certificado de Kapping gel">
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalCertificado3">
+                    <img class="certificados" src="assets/imagenes/certificados/certificado-3.jpeg"   height="auto" alt="Certificado de Extencion soft gel">
+                </a>
+                </div>
+            <br>
+                <div class="col d-flex justify-content-center" >
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalCertificado2">
+                        <img class="certificados" src="assets/imagenes/certificados/certificado-2.jpeg"  height="auto" alt="Certificado de esmaltado semipermanente y decoracion">
+                    </a>
+                </div>
+          </div>
+          <br><br>
+            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+                <div class="divPh">
+                <h2 class="title">Somos luisitas!</h2>
+                <p>
+                    Nos dedicamos al embellecimiento de manicura. comenzamos en 2020, mis inseguridades y miedos a emprender no me dejaban empezar pero gracias al cariño de ustedes 
+                    y el amor a mi trabajo cada día vamos creciendo mas.
+                    El nombre de Luisitas es en honor a mi abuela, que se llamaba María Luisa, ella es la persona que siempre nos inspiro a toda la familia a esforzarnos y hacer todo 
+                    con amor. Fue la persona mas buena, con un gran corazón. Y es nuestro ejemplo a seguir. Los incentivamos a que luchen por sus sueños siempre, con amor todo sale bien..
+                </p>
+            </div>
+            </div>
+        </div>
+    </div> 
+    <!-- INICIO MODAL CERTIFIADOS -->
+    <div tabindex="-1" aria-labelledby="modalCertificado1" aria-hidden="true"class="modal fade" id="modalCertificado1">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+          <div class="modal-content">
+              <img src="assets/imagenes/certificados/certificado-1.jpeg">
+          </div>
+        </div>
+      </div>
+      <div tabindex="-1" aria-labelledby="modalCertificado3" aria-hidden="true"class="modal fade" id="modalCertificado3">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+          <div class="modal-content">
+              <img src="assets/imagenes/certificados/certificado-3.jpeg"  alt="">
+          </div>
+        </div>
+      </div>
+      <div tabindex="-1" aria-labelledby="modalCertificado2" aria-hidden="true"class="modal fade" id="modalCertificado2">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+          <div class="modal-content">
+              <img src="assets/imagenes/certificados/certificado-2.jpeg"  alt="">
+          </div>
+        </div>
+      </div>
+          <!-- INICIO MODAL CERTIFIADOS -->
+    <br>
+    <!-- INCIO DE QUIENES SOMOS + DIRECCION -->
+    <div class="container" id="direc">
+        <div class="row">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12  d-flex justify-content-center align-items-center">
+                <h3 class="text-direc">Ubicacion: Paseo 111 Entre/Av 13 y 14 N°1374 - Ciudad de Villa Gesell</h3>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12" id="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.6110856650607!2d-56.98702688442787!3d-37.25693391015897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959b60e96c88bc85%3A0x18d505c69a2fc0db!2sP.%C2%BA%20111%201387%2C%20Villa%20Gesell%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2ses!4v1675777681312!5m2!1ses!2ses" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="sectionDosH2">
+        <h2 class="linea">Hace brillar tus uñas!</h2>
+    </div>
+    <!-- INCIO NUESTRAS PAGINAS CON LINKS -->
+    <section class="serviciosLinks">
+        <div>
+            <a href="https://www.instagram.com/luisitas_nail/?hl=es"><img src="assets/imagenes/logos/instagram-logo.png" alt="imagen-logo-instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100079977733706"><img src="assets/imagenes/logos/facebook-logo.png" alt="imagen-logo-facebook"></a>
+            <a href="tel:+34611326628"><img src="assets/imagenes/logos/wtp-logo.png" alt="imagen-logo-whatsapp"></a>
+        </div>
+        <!-- BTN -->
+        <div>                       
+            <a class="button" href="citas.html">📅 Pedir Cita!</a>
+        </div>                          
+        <!-- BTN -->
+    </section>
+    <!-- FIN DE NUESTRAS PAGINAS CON LINKS -->
+    <!-- INICIO FOOTER -->
+    <footer class="serviciosFooter">
+        <p>©DiseñoWeb-Sain 2022</p>
+    </footer>
+    <!-- FIN FOOTER -->
+    
+</body>
+</html>

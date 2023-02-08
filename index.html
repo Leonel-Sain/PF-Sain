@@ -22,64 +22,96 @@
     <title>Home-Luisitas Nails</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
         <div class="container-fluid" id="menuBarra">
-          <a class="navbar-brand" href="#"><h2 class="animate__animated animate__fadeInDown" >¡Luisitas Nails!</h2></a>
+          <a class="navbar-brand" href="index.html"><h1 class="animate__animated animate__fadeInDown">¡Luisitas Nails!</h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuBarraServicios">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Fotos</a>
+                <a class="nav-link active" aria-current="page" href="fotos.html">Fotos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
               </li>
             </ul>
-            <img src="assets/imagenes/logos/Logo-luisitas.png" width="8%" alt="">
+            <img class="imgLogo" src="assets/imagenes/logos/Logo-luisitas.png" width="8%" alt="">
           </div>
         </div>
       </nav>
-    
-      <!-- INICIO DE SECTION,BUTTON Y TITLE-->                             
-    <section class="sectionBtnTitle">
-        <h1 class="animate__animated  animate__fadeIn">Luisitas Nails!</h1>
-    <!-- BTN -->
-        <a class="btn" href="citas.html">📅 Pedir Cita!</a>
-    <!-- BTN -->
-    </section>
+            <!-- INICIO DE SECTION, CAROUSEL, BUTTON Y TITLE-->     
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/imagenes/img-uñas/carrusel1.jpg"  class="d-block w-100" alt="...">
+            <div class="carousel-caption container-fluid" >
+              <div class="row">
+                <div class="col">
+                  <h1 class="animate__animated  animate__fadeIn">Luisitas Nails!</h1>
+                  <a class="button" href="citas.html">📅 Pedir Cita!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imagenes/img-uñas/carrusel2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption container-fluid" >
+              <div class="row">
+                <div class="col">
+                  <h1 class="animate__animated  animate__fadeIn">Luisitas Nails!</h1>
+                  <a class="button" href="citas.html">📅 Pedir Cita!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imagenes/img-uñas/carrusel3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption container-fluid">
+              <div class="row">
+                <div class="col">
+                  <h1 class="animate__animated  animate__fadeIn">Luisitas Nails!</h1>
+                  <a class="button" href="citas.html">📅 Pedir Cita!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>                      
     <br>
-    <!-- FIN SECTION, BUTTON Y TITLE -->
+    <!-- FIN SECTION, CAROUSEL, BUTTON Y TITLE -->
     <!-- INICIO SECTION Y VIDEO -->
     <div class="sectionDosH2">
         <h2 class="linea">Hace brillar tus uñas!</h2>
     </div>
     <div class="sectionDos">
-        <video class="sectionDosVideo" autoplay loop muted  src="videos/videoDeUñas.mp4"></video>
-            <p>Luisitas Nails comenzó en el año 2020, debido a la pandemia decidi estudiar 
-                este hermoso curso, respecto a el embellecimiento de las uñas,
-                mas conocido como Nails. Nos especializamos en nailr arts, semipermanentes, 
-                capping gel,y en el año 2022, implementamos soft gel...
-            </p>
+      <video autoplay loop muted  src="assets/imagenes/videos/videoDeUñas.mp4"></video>
+          <p>Luisitas Nails comenzó en el año 2020, debido a la pandemia decidi estudiar 
+              este hermoso curso, respecto a el embellecimiento de las uñas,
+              mas conocido como Nails. Nos especializamos en nailr arts, semipermanentes, 
+              kapping gel,y en el año 2022, implementamos soft gel...
+          </p>
     </div>
     <!-- FIN SECTION Y VIDEO -->
     <!-- INCIO LOGOS CON LINKS -->
     <div class="sectionTres"> 
         <h2>Nuestras Paginas</h2>
     </div>   
+    <br>
     <!-- BTN -->
-    <div class="sectionTresBtnBox">                       
-        <a class="sectionTresBtn" href="citas.html">📅 Pedir Cita!</a>
-    </div>                          
+    <div class="sectionTresButtonBox">                       
+        <a class="button" href="citas.html">📅 Pedir Cita!</a>
+    </div>           
+                 
     <!-- BTN -->
     <div class="sectionTresLinks">
-        <a href="https://www.instagram.com/luisitas_nail/?hl=es" target="_blank" ><img src="logos/instagram-logo.png" alt="imagen-logo-instagram"></a>
-        <a href="https://www.facebook.com/profile.php?id=100079977733706" target="_blank" ><img src="logos/facebook-logo.png" alt="imagen-logo-facebook"></a>
-        <a href="tel:+34611326628" target="_blank" ><img src="logos/wtp-logo.png" alt="imagen-logo-whatsapp"></a>
+        <a href="https://www.instagram.com/luisitas_nail/?hl=es" target="_blank" ><img src="assets/imagenes/logos/instagram-logo.png" alt="imagen-logo-instagram"></a>
+        <a href="https://www.facebook.com/profile.php?id=100079977733706" target="_blank" ><img src="assets/imagenes/logos/facebook-logo.png" alt="imagen-logo-facebook"></a>
+        <a href="tel:+34611326628" target="_blank" ><img src="assets/imagenes/logos/wtp-logo.png" alt="imagen-logo-whatsapp"></a>
     </div>
     <!-- FIN LOGOS CON LINKS -->
     <!-- INICIO FOOTER -->

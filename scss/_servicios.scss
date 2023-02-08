@@ -1,0 +1,55 @@
+/*INICIO SECTION, EXPLICACION DE TRABAJOS*/
+.divPh{
+    background-color: rgb(245,245,245);
+    padding: 40px;
+    border-radius: 40px ;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    word-spacing: 0.2em;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    .title{
+        background-image: linear-gradient( 0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6 ) );
+        border-radius: 10px;
+        color:  rgb(245,245,245);
+    }
+}
+.Ph{
+    box-shadow: -25px 22px 30px -2px rgba(0,0,0,0.6);
+    border-radius: 20px;
+}
+/*FIN SECTION, EXPLICACION DE TRABAJOS*/
+/*INICIO CARACTERISTICAS*/
+.caracteristicas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul{
+        font-size: 1.4em;
+        list-style: none;
+        font-weight: 500;
+    }
+}
+/*FIN CARACTERISTICAS*/
+/*INCIO NUESTRAS PAGINAS CON LINKS*/
+.serviciosLinks{
+    display: flex;
+    justify-content: space-evenly;
+}
+/*FIN NUESTRAS PAGINS CON LINKS*/
+/*INICIO FOOTER*/
+.serviciosFooter{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(63, 63, 63);
+}
+/*FIN FOOTER*/
+/*INCIO @MEDIA*/
+@media (max-width: 576px){ 
+    ul{
+        font-size: 0.9em;
+        }
+}
+
+/*FIN @MEDIA*/
