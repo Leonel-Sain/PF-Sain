@@ -2,16 +2,31 @@
 @import "nosotros";
 @import "fotos";
 
-
 //VARIABLES DEL MENU Y BOTONES
 $colorPrincipal: blueviolet;
 $colorHover:  rgb(216, 64, 208);
 $sizePrincipal: 2.5em;
 $familyTitle:"Dancing Script", cursiva;
+$colorBasic: rgb(245,245,245);
 //VARIABLES DEL BODY 
 $familyGeneral: 'Roboto', sans-serif;
 $weigth: bold;
-
+//VARIABLE MAP FOOTER
+$footer:(
+    fondoDegradado:linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ),
+    fondoColor: rgb(63, 63, 63)
+    );
+    //MIXIN
+    @mixin parrafoGeneral($sizeParrafo, $TxCenter, $colorBasic, $bordeado, $shadow, $mgn, $pdg ){
+        height: 35%;
+        font-size:$sizeParrafo;
+        text-align: $TxCenter;
+        background-color:$colorBasic;
+        border-radius: $bordeado;
+        box-shadow: $shadow;
+        margin:$mgn;
+        padding:$pdg;
+    }
 body{
     margin: 0%;
     padding: 0%;
@@ -60,7 +75,7 @@ body{
     position: relative;
     box-shadow: 0px 0px 6px 4px rgba(138, 43, 226, 0.25);
     #menuBarra{
-    background-color: rgb(245,245,245);
+    background-color:$colorBasic;
     h1{
     color:$colorPrincipal;
     font-size:$sizePrincipal;
@@ -133,17 +148,11 @@ body{
     margin-bottom: 20px;
     box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
     }
-    P{
+    p{
         height: 35%;
-        font-size: 1.8em;
-        text-align: center;
         word-spacing: 0.2em;
-        background-color: rgb(245,245,245);
-        border-radius: 20px;
-        box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
-        margin: 50px;
-        padding: 10px;
-      }
+        @include parrafoGeneral(1.8em,center, rgb(245,245,245),20px ,0px 0px 7px 1px rgba(0,0,0,0.75) ,50px ,10px )
+}
 }
 
 /*FIN SECTION Y VIDEO*/
@@ -167,9 +176,11 @@ body{
 /*FIN LOGOS CON LINKS*/
 /*INICIO FOOTER*/
 .footerFinPagina{
-    text-align: center;
-    background-image: linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ) ;
-    color: rgb(63, 63, 63);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    background-image: map-get($footer, fondoDegradado);
+    color: map-get($footer, fondoColor);
 }
 /*FIN FOOTER*/
 /*INICIO @MEDIA*/
