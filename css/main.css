@@ -45,8 +45,8 @@
 /*FIN FOOTER*/
 /*INCIO @MEDIA*/
 @media (max-width: 576px) {
-  ul {
-    font-size: 0.9em; } }
+  ul li {
+    font-size: 0.7em; } }
 
 /*FIN @MEDIA*/
 .certificados {
