@@ -54,7 +54,6 @@ body{
         border-radius: 17px;
     }
 }
-
 /*SCROOLLBAR*/
 ::-webkit-scrollbar{
     width: 12px;
@@ -108,10 +107,8 @@ body{
     font-size: 4.1em;
     color: white;
     }
-
 }
-
-/*FIN DE SECTION,TITLE*/
+/*FIN DE SECTION,CAROUSEL,BUTTON Y TITLE*/
 /*INICIO SECTION Y VIDEO*/
 .sectionDosH2{
     display: flex;
@@ -154,9 +151,8 @@ body{
         @include parrafoGeneral(1.8em,center, rgb(245,245,245),20px ,0px 0px 7px 1px rgba(0,0,0,0.75) ,50px ,10px )
 }
 }
-
 /*FIN SECTION Y VIDEO*/
-/*INCIO LOGOS CON LINKS*/
+/*INCIO ICONOS CON LINKS*/
 .sectionTres{
     display: flex;
     justify-content: center;
@@ -171,10 +167,9 @@ body{
 .sectionTresLinks{
     display: flex;
     justify-content: center;
-    margin: 1%; 
+    margin: 1%;  
 }
-
-/*FIN LOGOS CON LINKS*/
+/*FIN ICONOS CON LINKS*/
 /*INICIO FOOTER*/
 .footerFinPagina{
     display: flex;
@@ -185,7 +180,6 @@ body{
 }
 /*FIN FOOTER*/
 /*INICIO @MEDIA*/
-
 @media (max-width: 576px){
     #menuBarra{
         flex-direction: column;
