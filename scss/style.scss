@@ -69,15 +69,11 @@ body{
 /*MENU BARRA*/ 
 .navbar{
     z-index: 1;
-    padding-top: 0px !important;
-    justify-content: center;
-    position: relative;
+    position: fixed;
     box-shadow: 0px 0px 6px 4px rgba(138, 43, 226, 0.25);
-    #menuBarra{
-    background-color:$colorBasic;
     h1{
     color:$colorPrincipal;
-    font-size:$sizePrincipal;
+    font-size: 2.5em;
     font-family:$familyTitle;
     &:hover{
         color: rgb(216, 64, 208)
@@ -85,17 +81,12 @@ body{
     }
     a{
     color: black;
-    font-size: 19px;
     }   
     a:hover{
     color:$colorHover;
     }
-    #menuBarraServicios{
-    padding-left: 200px;
-    margin-right: 200px !important;
-    }
 }
-}
+
 /*FIN MENU BARRA*/ 
 /*INICIO DE SECTION,CAROUSEL,BUTTON Y TITLE*/
 .carousel-caption{
@@ -106,6 +97,7 @@ body{
     h1{
     font-size: 4.1em;
     color: white;
+    padding-bottom: 25px;
     }
 }
 /*FIN DE SECTION,CAROUSEL,BUTTON Y TITLE*/
@@ -159,15 +151,20 @@ body{
     background-image: linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ) ;
     font-size: 1.5em;
     color: white; 
+    padding-top: 5px;
 }
 .sectionTresButtonBox{
     display: flex;
     justify-content: center;
+    padding: 35px;
 }
 .sectionTresLinks{
     display: flex;
     justify-content: center;
-    margin: 1%;  
+    margin: 1%;
+    a{
+    padding-inline: 10px; 
+     }
 }
 /*FIN ICONOS CON LINKS*/
 /*INICIO FOOTER*/
@@ -181,16 +178,21 @@ body{
 /*FIN FOOTER*/
 /*INICIO @MEDIA*/
 @media (max-width: 576px){
-    #menuBarra{
-        flex-direction: column;
-        img{
-        display: none;
+    .navbar{
+        #menuBarra{
+            h1{
+                font-size: 1.8em ;
+            }
+            img{
+            display: none;
+            }
+            p{
+                font-size:18px;
         }
-        p{
-            font-size:1.4em ;
-            justify-content: center;
-    }
-    }
+}}
+#menuBarraServicios{
+    padding-left: 0px;
+}
     .sectionDosH2{
         font-size: 1.2em;
     }
@@ -201,23 +203,27 @@ body{
     font-size: 1.5em;
 }
 .button{
-    border-width: 8px;
-    font-size: 1.1em;
-    border-radius: 15px;
-    border-width: 10px;
+    border-width: 6px;
+    font-size: 0.9em;
+    border-radius: 13px;
     &:hover{
-        border-width: 10px;
-        font-size: 1.3em;
-        border-radius: 18px;
+        border-width: 7px;
+        font-size: 1.0em;
+        border-radius: 16px;
     }
 }
 .carousel-caption{
     top:1rem !important;
     h1{
-        font-size: 2.5em;
+        font-size: 2.2em;
+        padding-bottom: 5px;
     }
   }
+  .sectionDos p{
+    font-size: 18px;
+  }
 }
+
 @media (max-width: 768px) {
     .sectionDos {
         display: block;
@@ -226,19 +232,11 @@ body{
          }
 }
 #menuBarra{
-    display: flex;
-    padding-right: 0px;
-    h2{ 
-    justify-content: center;
-    font-size: 1.8em}
     img{
         display: none;
         }
-    a{
-    font-size: 19px;
-    padding-inline: 0px;
-    justify-content: center;
-    }
+        #menuBarraServicios{
+        }
 }
 .carousel-caption{
     top:3rem;

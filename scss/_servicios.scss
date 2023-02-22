@@ -35,6 +35,9 @@
 .serviciosLinks{
     display: flex;
     justify-content: space-evenly;
+    a{
+        padding-inline: 7px;
+    }
 }
 /*FIN NUESTRAS PAGINAS CON LINKS*/
 /*INICIO FOOTER*/

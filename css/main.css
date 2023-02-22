@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*INICIO SECTION, EXPLICACION DE TRABAJOS*/
 .divPh {
   background-color: whitesmoke;
@@ -33,6 +34,8 @@
 .serviciosLinks {
   display: flex;
   justify-content: space-evenly; }
+  .serviciosLinks a {
+    padding-inline: 7px; }
 
 /*FIN NUESTRAS PAGINAS CON LINKS*/
 /*INICIO FOOTER*/
@@ -51,8 +54,32 @@
 /*FIN @MEDIA*/
 .certificados {
   box-shadow: -15px 18px 20px -1px rgba(41, 40, 40, 0.6);
-  border-radius: 20px;
+  border-radius: 10px;
   width: 300px; }
+
+.titleSomosLuisitas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imagenes/img-uñas/esmaltes.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 40vh; }
+  .titleSomosLuisitas h1 {
+    font-size: 3em;
+    color: white; }
+
+.introH2 {
+  padding: 60px;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.438), rgba(255, 255, 255, 0.438)); }
+  .introH2 h2 {
+    font-family: 'montserrat_medium';
+    font-weight: normal;
+    line-height: 1.25;
+    font-size: 31px;
+    text-transform: none;
+    letter-spacing: 0px;
+    color: #C64771; }
 
 #maps {
   padding: 20px 20px; }
@@ -64,7 +91,7 @@
 .text-direc {
   background-color: whitesmoke;
   padding: 40px;
-  border-radius: 30px;
+  border-radius: 20px;
   font-size: 1.2em;
   font-weight: 500;
   text-align: center;
@@ -86,15 +113,16 @@
 
 @media (max-width: 768px) {
   .certificados {
-    width: 200px; } }
+    width: 300px;
+    margin-bottom: 30px; } }
 
 @media (max-width: 576px) {
   .certificados {
-    width: 200px; } }
-
-@media (max-width: 480px) {
-  .certificados {
-    width: 150px; } }
+    width: 150px; }
+  .titleSomosLuisitas h1 {
+    font-size: 2em; }
+  .introH2 h2 {
+    font-size: 25px; } }
 
 .galeria img {
   width: 100%;
@@ -111,6 +139,10 @@
 
 .modal-content img {
   border-radius: 15px; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .galeria img {
+    height: 600px; } }
 
 body {
   margin: 0%;
@@ -152,26 +184,18 @@ body {
 /*MENU BARRA*/
 .navbar {
   z-index: 1;
-  padding-top: 0px !important;
-  justify-content: center;
-  position: relative;
+  position: fixed;
   box-shadow: 0px 0px 6px 4px rgba(138, 43, 226, 0.25); }
-  .navbar #menuBarra {
-    background-color: whitesmoke; }
-    .navbar #menuBarra h1 {
-      color: blueviolet;
-      font-size: 2.5em;
-      font-family: "Dancing Script", cursiva; }
-      .navbar #menuBarra h1:hover {
-        color: #d840d0; }
-    .navbar #menuBarra a {
-      color: black;
-      font-size: 19px; }
-    .navbar #menuBarra a:hover {
+  .navbar h1 {
+    color: blueviolet;
+    font-size: 2.5em;
+    font-family: "Dancing Script", cursiva; }
+    .navbar h1:hover {
       color: #d840d0; }
-    .navbar #menuBarra #menuBarraServicios {
-      padding-left: 200px;
-      margin-right: 200px !important; }
+  .navbar a {
+    color: black; }
+  .navbar a:hover {
+    color: #d840d0; }
 
 /*FIN MENU BARRA*/
 /*INICIO DE SECTION,CAROUSEL,BUTTON Y TITLE*/
@@ -182,7 +206,8 @@ body {
   top: 8rem; }
   .carousel-caption h1 {
     font-size: 4.1em;
-    color: white; }
+    color: white;
+    padding-bottom: 25px; }
 
 /*FIN DE SECTION,CAROUSEL,BUTTON Y TITLE*/
 /*INICIO SECTION Y VIDEO*/
@@ -238,16 +263,20 @@ body {
   justify-content: center;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   font-size: 1.5em;
-  color: white; }
+  color: white;
+  padding-top: 5px; }
 
 .sectionTresButtonBox {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 35px; }
 
 .sectionTresLinks {
   display: flex;
   justify-content: center;
   margin: 1%; }
+  .sectionTresLinks a {
+    padding-inline: 10px; }
 
 /*FIN ICONOS CON LINKS*/
 /*INICIO FOOTER*/
@@ -261,13 +290,14 @@ body {
 /*FIN FOOTER*/
 /*INICIO @MEDIA*/
 @media (max-width: 576px) {
-  #menuBarra {
-    flex-direction: column; }
-    #menuBarra img {
-      display: none; }
-    #menuBarra p {
-      font-size: 1.4em;
-      justify-content: center; }
+  .navbar #menuBarra h1 {
+    font-size: 1.8em; }
+  .navbar #menuBarra img {
+    display: none; }
+  .navbar #menuBarra p {
+    font-size: 18px; }
+  #menuBarraServicios {
+    padding-left: 0px; }
   .sectionDosH2 {
     font-size: 1.2em; }
   .linea::after, .linea::before {
@@ -275,36 +305,28 @@ body {
   .linea {
     font-size: 1.5em; }
   .button {
-    border-width: 8px;
-    font-size: 1.1em;
-    border-radius: 15px;
-    border-width: 10px; }
+    border-width: 6px;
+    font-size: 0.9em;
+    border-radius: 13px; }
     .button:hover {
-      border-width: 10px;
-      font-size: 1.3em;
-      border-radius: 18px; }
+      border-width: 7px;
+      font-size: 1.0em;
+      border-radius: 16px; }
   .carousel-caption {
     top: 1rem !important; }
     .carousel-caption h1 {
-      font-size: 2.5em; } }
+      font-size: 2.2em;
+      padding-bottom: 5px; }
+  .sectionDos p {
+    font-size: 18px; } }
 
 @media (max-width: 768px) {
   .sectionDos {
     display: block; }
     .sectionDos Video {
       display: none; }
-  #menuBarra {
-    display: flex;
-    padding-right: 0px; }
-    #menuBarra h2 {
-      justify-content: center;
-      font-size: 1.8em; }
-    #menuBarra img {
-      display: none; }
-    #menuBarra a {
-      font-size: 19px;
-      padding-inline: 0px;
-      justify-content: center; }
+  #menuBarra img {
+    display: none; }
   .carousel-caption {
     top: 3rem; } }
 

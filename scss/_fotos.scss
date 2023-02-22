@@ -21,3 +21,10 @@
         }
 }
 //FIN DE GALERIA DE FOTOS + MODAL FOTOS
+@media (min-width:768px) and ( max-width:1024px ){
+    .galeria{
+        img{
+            height: 600px;
+        }
+    }
+}
