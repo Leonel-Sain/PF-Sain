@@ -1,7 +1,7 @@
 @import "servicios";
 @import "nosotros";
 @import "fotos";
-
+@import "citas";
 //VARIABLES DEL MENU Y BOTONES
 $colorPrincipal: blueviolet;
 $colorHover:  rgb(216, 64, 208);
@@ -189,9 +189,7 @@ body{
             p{
                 font-size:18px;
         }
-}}
-#menuBarraServicios{
-    padding-left: 0px;
+}
 }
     .sectionDosH2{
         font-size: 1.2em;
