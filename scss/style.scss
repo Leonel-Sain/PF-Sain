@@ -151,9 +151,10 @@ body{
     display: flex;
     justify-content: center;
     background-image: linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ) ;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: white; 
     padding-top: 5px;
+    margin-top:70px;
 }
 .sectionTresButtonBox{
     display: flex;
@@ -162,7 +163,7 @@ body{
 }
 .sectionTresLinks{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     margin: 50px;
     a{
     padding-inline: 10px; 
@@ -193,6 +194,13 @@ body{
         }
 }
 }
+.carousel-caption{
+    top:1rem !important;
+    h1{
+        font-size: 2.2em;
+        padding-bottom: 5px;
+    }
+  }
     .sectionDosH2{
         font-size: 1.2em;
     }
@@ -212,18 +220,19 @@ body{
         border-radius: 16px;
     }
 }
-.carousel-caption{
-    top:1rem !important;
-    h1{
-        font-size: 2.2em;
-        padding-bottom: 5px;
-    }
-  }
   .sectionDos p{
     font-size: 18px;
   }
+  .sectionTres{
+    margin-top:10px;
+  }
+  .sectionTresLinks{
+    margin: 10px;
+  }
+  .parrafoLinks{
+    font-size:13px ;
+  }
 }
-
 @media (max-width: 768px) {
     .sectionDos {
         display: block;
@@ -235,11 +244,15 @@ body{
     img{
         display: none;
         }
-        #menuBarraServicios{
-        }
 }
 .carousel-caption{
     top:3rem;
+  }
+  .sectionTresLinks{
+    margin: 10px;
+  }
+  .parrafoLinks{
+    font-size:13px ;
   }
 }
 @media (max-width:1200px){

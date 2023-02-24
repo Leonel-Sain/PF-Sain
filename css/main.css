@@ -25,11 +25,10 @@
   justify-content: center;
   align-items: center;
   padding-top: 3%;
-  background: linear-gradient(to bottom, rgba(168, 63, 145, 0.322), rgba(0, 0, 0, 0)); }
+  background: linear-gradient(to bottom, rgba(168, 63, 145, 0.479), rgba(0, 0, 0, 0)); }
   .caracteristicas ul {
     font-size: 1.4em;
-    list-style: none;
-    font-weight: 500; }
+    list-style: none; }
 
 /*FIN CARACTERISTICAS*/
 /*INCIO @MEDIA*/
@@ -262,9 +261,10 @@ body {
   display: flex;
   justify-content: center;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: white;
-  padding-top: 5px; }
+  padding-top: 5px;
+  margin-top: 70px; }
 
 .sectionTresButtonBox {
   display: flex;
@@ -273,7 +273,7 @@ body {
 
 .sectionTresLinks {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   margin: 50px; }
   .sectionTresLinks a {
     padding-inline: 10px; }
@@ -296,6 +296,11 @@ body {
     display: none; }
   .navbar #menuBarra p {
     font-size: 18px; }
+  .carousel-caption {
+    top: 1rem !important; }
+    .carousel-caption h1 {
+      font-size: 2.2em;
+      padding-bottom: 5px; }
   .sectionDosH2 {
     font-size: 1.2em; }
   .linea::after, .linea::before {
@@ -310,13 +315,14 @@ body {
       border-width: 7px;
       font-size: 1.0em;
       border-radius: 16px; }
-  .carousel-caption {
-    top: 1rem !important; }
-    .carousel-caption h1 {
-      font-size: 2.2em;
-      padding-bottom: 5px; }
   .sectionDos p {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .sectionTres {
+    margin-top: 10px; }
+  .sectionTresLinks {
+    margin: 10px; }
+  .parrafoLinks {
+    font-size: 13px; } }
 
 @media (max-width: 768px) {
   .sectionDos {
@@ -326,7 +332,11 @@ body {
   #menuBarra img {
     display: none; }
   .carousel-caption {
-    top: 3rem; } }
+    top: 3rem; }
+  .sectionTresLinks {
+    margin: 10px; }
+  .parrafoLinks {
+    font-size: 13px; } }
 
 @media (max-width: 1200px) {
   #menuBarra img {
