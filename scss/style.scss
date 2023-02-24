@@ -5,7 +5,7 @@
 //VARIABLES DEL MENU Y BOTONES
 $colorPrincipal: blueviolet;
 $colorHover:  rgb(216, 64, 208);
-$sizePrincipal: 2.5em;
+$sizePrincipal: 2.3em;
 $familyTitle:"Dancing Script", cursiva;
 $colorBasic: rgb(245,245,245);
 //VARIABLES DEL BODY 
@@ -71,9 +71,10 @@ body{
     z-index: 1;
     position: fixed;
     box-shadow: 0px 0px 6px 4px rgba(138, 43, 226, 0.25);
+    #menuBarra{
     h1{
     color:$colorPrincipal;
-    font-size: 2.5em;
+    font-size: $colorBasic;
     font-family:$familyTitle;
     &:hover{
         color: rgb(216, 64, 208)
@@ -85,6 +86,7 @@ body{
     a:hover{
     color:$colorHover;
     }
+}
 }
 
 /*FIN MENU BARRA*/ 
@@ -160,8 +162,8 @@ body{
 }
 .sectionTresLinks{
     display: flex;
-    justify-content: center;
-    margin: 1%;
+    justify-content: right;
+    margin: 50px;
     a{
     padding-inline: 10px; 
      }

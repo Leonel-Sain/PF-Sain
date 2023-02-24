@@ -23,29 +23,15 @@
 .caracteristicas {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 3%;
+  background: linear-gradient(to bottom, rgba(168, 63, 145, 0.322), rgba(0, 0, 0, 0)); }
   .caracteristicas ul {
     font-size: 1.4em;
     list-style: none;
     font-weight: 500; }
 
 /*FIN CARACTERISTICAS*/
-/*INCIO NUESTRAS PAGINAS CON LINKS*/
-.serviciosLinks {
-  display: flex;
-  justify-content: space-evenly; }
-  .serviciosLinks a {
-    padding-inline: 7px; }
-
-/*FIN NUESTRAS PAGINAS CON LINKS*/
-/*INICIO FOOTER*/
-.serviciosFooter {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: #3f3f3f; }
-
-/*FIN FOOTER*/
 /*INCIO @MEDIA*/
 @media (max-width: 576px) {
   ul li {
@@ -200,15 +186,15 @@ body {
   z-index: 1;
   position: fixed;
   box-shadow: 0px 0px 6px 4px rgba(138, 43, 226, 0.25); }
-  .navbar h1 {
+  .navbar #menuBarra h1 {
     color: blueviolet;
-    font-size: 2.5em;
+    font-size: whitesmoke;
     font-family: "Dancing Script", cursiva; }
-    .navbar h1:hover {
+    .navbar #menuBarra h1:hover {
       color: #d840d0; }
-  .navbar a {
+  .navbar #menuBarra a {
     color: black; }
-  .navbar a:hover {
+  .navbar #menuBarra a:hover {
     color: #d840d0; }
 
 /*FIN MENU BARRA*/
@@ -287,8 +273,8 @@ body {
 
 .sectionTresLinks {
   display: flex;
-  justify-content: center;
-  margin: 1%; }
+  justify-content: right;
+  margin: 50px; }
   .sectionTresLinks a {
     padding-inline: 10px; }
 
