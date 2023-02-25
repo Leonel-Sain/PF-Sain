@@ -16,17 +16,17 @@ $footer:(
     fondoDegradado:linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ),
     fondoColor: rgb(63, 63, 63)
     );
-    //MIXIN
-    @mixin parrafoGeneral($sizeParrafo, $TxCenter, $colorBasic, $bordeado, $shadow, $mgn, $pdg ){
-        height: 35%;
-        font-size:$sizeParrafo;
-        text-align: $TxCenter;
-        background-color:$colorBasic;
-        border-radius: $bordeado;
-        box-shadow: $shadow;
-        margin:$mgn;
-        padding:$pdg;
-    }
+//MIXIN
+@mixin parrafoGeneral($sizeParrafo, $TxCenter, $colorBasic, $bordeado, $shadow, $mgn, $pdg ){
+    height: 35%;
+    font-size:$sizeParrafo;
+    text-align: $TxCenter;
+    background-color:$colorBasic;
+    border-radius: $bordeado;
+    box-shadow: $shadow;
+    margin:$mgn;
+    padding:$pdg;
+}
 body{
     margin: 0%;
     padding: 0%;
@@ -77,7 +77,7 @@ body{
     font-size: $colorBasic;
     font-family:$familyTitle;
     &:hover{
-        color: rgb(216, 64, 208)
+        color: $colorHover
     }
     }
     a{
@@ -88,7 +88,6 @@ body{
     }
 }
 }
-
 /*FIN MENU BARRA*/ 
 /*INICIO DE SECTION,CAROUSEL,BUTTON Y TITLE*/
 .carousel-caption{
